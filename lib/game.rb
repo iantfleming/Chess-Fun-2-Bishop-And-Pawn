@@ -2,6 +2,10 @@
 
 class Game
   def play(bishop, pawn)
+    cooridinate_in_common(bishop, pawn)
+  end
+
+  def cooridinate_in_common(bishop, pawn)
     b = bishop.split('')
     p = pawn.split('')
     piece_array = b + p

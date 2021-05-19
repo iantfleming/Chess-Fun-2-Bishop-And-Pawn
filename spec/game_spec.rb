@@ -12,6 +12,10 @@ describe Game do
     expect(subject).to respond_to(:play).with(2).arguments
   end
 
+  it 'responds to the method cooridinate_in_common' do
+    expect(subject).to respond_to(:cooridinate_in_common).with(2).arguments
+  end
+
   it 'will return false if a pawn is next to a bishop' do
     expect(subject.play('a1', 'a2')).to eq(false)
   end
