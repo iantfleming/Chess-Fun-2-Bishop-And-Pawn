@@ -15,4 +15,8 @@ describe Game do
   it 'will return false if a pawn is next to a bishop' do
     expect(subject.play('a1', 'a2')).to eq(false)
   end
+
+  it 'will return false if a pawn is on the same row as a columm' do
+    expect(subject.play('a2', 'a3')).to eq(false)
+  end
 end
