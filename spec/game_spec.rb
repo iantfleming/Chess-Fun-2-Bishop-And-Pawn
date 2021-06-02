@@ -13,7 +13,7 @@ describe Game do
   end
 
   it 'responds to the method cooridinate_in_common' do
-    expect(subject).to respond_to(:cooridinate_in_common).with(2).arguments
+    expect(subject).to respond_to(:coordinate_in_common).with(2).arguments
   end
 
   it 'responds to the method convert_to_integer' do
