@@ -66,6 +66,16 @@ describe Game do
   it 'will take all string integers in array and convert to an actual integer' do
     expect(subject.convert_to_integer(%w[a 1 a 2])).to eq(['a', 'a', 1, 2])
   end
+
+  # check_if_unique
+  it 'will return true if all elements in the array are unique' do
+    expect(subject.check_if_unique(%w[a 1 b 2])).to eq(true)
+  end
+
+  it 'will return false if array is not entirely unique' do
+    expect(subject.check_if_unique(%w[a 1 b 1])).to eq(false)
+  end
+
 end
 
 # my code is now separating coordinates into individual elements and converting string numbers to real integers
